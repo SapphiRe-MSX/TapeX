@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TapeX Viewers Demo</title>
+    <link rel="stylesheet" href="/../tapex-viewers.css" type="text/css">
+    <script src="../../tapex-readers.js"></script>
+    <script src="../../tapex.js"></script>
+    <script src="../tapex-viewers.js"></script>
+</head>
+<body>
+    <h1>TapeX Viewers Demo</h1>
+    <p>Select a CAS, TAP, TZX or TSX tape image:</p>
+    <input type="file" id="tape-file" accept=".cas,.tap,.tsx,.tzx">
+
+    <div id="TapeX"></div>
+
+    <script>
+    var viewers = TapeXblockViewers(document.getElementById("TapeX"));
+    document.getElementById("tape-file").addEventListener("change", function(e) {
+        var file = e.target.files[0];
+
+        if (!file) { return; }
+
+        file.arrayBuffer().then(function(buffer) {
+            var tape = TapeX(buffer);
+            viewers.render(tape.getBlocks());
+        });
+    });
+    </script>
+
+</body>
+</html>
