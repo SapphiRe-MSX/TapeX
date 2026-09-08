@@ -165,7 +165,7 @@ function TapeXblockViewers(container) {
             html += fieldToHtml('Sync 1 pulse', `${block.sync1Pulse} T-states`);
             html += fieldToHtml('Sync 2 pulse', `${block.sync2Pulse} T-states`);
             html += fieldToHtml('Zero pulse', `${block.zeroPulse} T-states`);
-            html += fieldToHtml('One pulse', `${block.block.onePulse} T-states`);
+            html += fieldToHtml('One pulse', `${block.onePulse} T-states`);
             html += fieldToHtml('Pilot pulses', block.pilotPulses);
             html += fieldToHtml('Used bits', block.usedBits);
             html += fieldToHtml('Pause', `${block.pause} ms`);
@@ -228,7 +228,7 @@ function TapeXblockViewers(container) {
             html += fieldToHtml('Pilot pulse', `${block.pilotPulse} T-states`);
             html += fieldToHtml('Pilot pulses', block.pilotPulses);
             html += fieldToHtml('Zero pulse', `${block.zeroPulse} T-states`);
-            html += fieldToHtml('One pulse', `${block.block.onePulse} T-states`);
+            html += fieldToHtml('One pulse', `${block.onePulse} T-states`);
             html += fieldToHtml('Bit config', hex(block.bitConfig, 2));
             html += fieldToHtml('Byte config', hex(block.byteConfig, 2));
             html += fieldToHtml('Data length', `${block.data.length} bytes`);
