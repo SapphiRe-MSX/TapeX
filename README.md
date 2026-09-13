@@ -153,6 +153,8 @@ A viewer instance should normally be created once for its container and reused w
 
 A browser-based demo of TapeX Viewers is included in the `tapex-viewers/demo` directory.
 
+[Live TapeX Viewers demo](https://sapphire-msx.github.io/TapeX/tapex-viewers/demo/)
+
 The demo allows local CAS, TAP and TZX/TSX files to be opened and inspected directly in the browser. Tape images are processed entirely client-side and are never uploaded to a server.
 
 ## TapeX Viewers API
