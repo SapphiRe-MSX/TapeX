@@ -157,6 +157,12 @@ A browser-based demo of TapeX Viewers is included in the `tapex-viewers/demo` di
 
 The demo allows local CAS, TAP and TZX/TSX files to be opened and inspected directly in the browser. Tape images are processed entirely client-side and are never uploaded to a server.
 
+Don't have a tape image to try? You can find some here:
+
+* [MSX CAS files](https://download.file-hunter.com/Games/MSX1/CAS/)
+* [MSX TSX files](https://tsx.eslamejor.com/)
+* [ZX Spectrum TAP/TZX files](https://github.com/retrobrews/zxspectrum-games)
+
 ## TapeX Viewers API
 
 ### `TapeXblockViewers(container)`
